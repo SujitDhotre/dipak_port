@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="refresh" content="0; url=/" />
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Trendzlink ">
+    <meta name="keywords" content="trendzlink, envision, machine vision, visual inspection, pune, delhi, chennai, bangalore, artificial inetlligence, machine learning, AI, computer vision, industry 4.0">
+    <title>Dipak Dhage</title>    
+    <link rel="icon" href="images/web_logo.png" sizes="32x32"> 
+    <link href="/static/css_new//materialize.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/morphext.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/tooltipster.min.css">
+    <link rel="stylesheet" href="css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	    <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-EVV2EJ1ZEZ"></script>
+	
+    <script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-EVV2EJ1ZEZ');
+	</script>
+    <script>
+
+(function(){
+      emailjs.init({
+        publicKey: "Totb1qcZqBoqXK54y",
+      });
+   })();
+        // emailjs.init('Totb1qcZqBoqXK54y');  // Replace with your actual User ID
+
+        function sendEmail() {
+  // Get the values from the form inputs
+  var email = document.getElementById("email").value;
+  var name = document.getElementById("name").value;
+  var msg = document.getElementById("msg").value;
+
+  // Validation: Ensure name, email, and message are not empty or null
+  if (email === "" || email === null) {
+    alert("Please enter a valid email address.");
+    return; // Exit the function if validation fails
+  }
+  if (name === "" || name === null) {
+    alert("Please enter your name.");
+    return; 
+  }
+  if (msg === "" || msg === null) {
+    alert("Please enter a message.");
+    return; 
+  }
+
+  // Prepare the data to send
+  const templateParams = {
+    to_name: 'Dipak',
+    from_name: name,
+    message: msg,
+    reply_to: email,
+  };
+  
+  console.log("Sending email with the following data: ", templateParams);
+
+  // Send the email using Email.js
+  emailjs.send("service_a63ipqc", "template_6tp3b5g", templateParams)
+    .then(function(response) {
+        alert('Email sent successfully')
+      console.log('Email sent successfully:', response);
+    }, function(error) {
+        alert('Error sending email');
+      console.error('Error sending email:', error);
+    });
+}
+
+    </script>
+
+<!-- <Script src="./js/email_function.js"></Script> -->
+</head>
+<body >
+<!--PreLoader-->
+<div class="loader">
+    <div class="loader-inner">
+        <div class="cssload-loader"></div>
+    </div>
+</div>
+<!--PreLoader Ends-->
+<!-- header -->
+<header class="site-header" id="header">
+    <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="images/dipak.jpg" alt="logo" class="logo-default">
+                <img src="images/dipak.jpg" alt="logo" class="logo-scrolled">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="home_link_main" href="#home"> Home </a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact_link_main" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about_link_main" href="#skill">Skill's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about_link_main" href="#project">Project's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about_link_main" href="#exp">Experiences</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact_link_main" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--side menu open button-->
+        <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+            <span></span> <span></span> <span></span>
+        </a>
+    </nav>
+    <!-- side menu -->
+    <div class="side-menu opacity-0 gradient-bg">
+        <div class="overlay"></div>
+        <div class="inner-wrapper">
+            <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i></i><i></i></span>
+            <nav class="side-nav w-100">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link collapsePagesSideMenu" href="#home">
+                            Home 
+                            <!-- <i class="fas fa-chevron-down"></i> -->
+                        </a>
+                       
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="home_link_main" href="#home"> Home </a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact_link_main" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about_link_main" href="#skill">Skill's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about_link_main" href="#project">Project's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="about_link_main" href="#exp">Experiences</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact_link_main" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+    <div id="close_side_menu" class="tooltip"></div>
+    <!-- End side menu -->
+</header>
+<!-- header -->
+<!--slider-->
+<section id="home" class="p-0  single-slide">
+    <h2 class="d-none">hidden</h2>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <div class="part-header parallax parallax-slow"></div>
+    <div class="overlay overlay-dark opacity-6 z-index-n1"></div>
+    <!-- particles.js container -->
+
+    <div id="particles-text-morph">
+    	    <div class="overlay overlay-dark opacity-5 z-index-n1 border"></div>
+
+        <h1 class="font-xlight size">Dipak Dhage</h1>
+        <!-- <h3 class="font-light2 text-grey"> FOR </h3> -->
+        <h3 id="morph-text" class="pb-2 defaultcolor">Java Developer, ML Engineer, Backend Engineer, Passionate Programmer </h3>
+        <h4 class="text-grey">A coding enthusiast with a strong foundation in Java development, experienced in working with renowned brands and solving business problems through software development and software architecture.</h4>
+</div>
+    <!--scroll down-->
+    <a href="#our-feature" class="scroll-down pagescroll hover-default">Scroll Down <i class="fas fa-long-arrow-alt-down"></i></a>
+</section>
+<!--slider end-->
+<!--Some Feature -->
+<section id="about" class="single-feature padding">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-7 col-md-7 col-sm-7 text-sm-start text-center wow fadeInLeft" data-wow-delay="300ms">
+                <div class="heading-title mb-4">
+                    <!-- <h2 class="darkcolor font-normal bottom30">Take <span class="defaultcolor"> Quality Assurance </span> to the next level with <em>Machine Intelligence</em>  and <em>Industry 4.0</em></h2>  -->
+                    <h2 class="darkcolor font-normal bottom30">Versatile professional with expertise in <span class="defaultcolor">Java development</span> and <span class="defaultcolor">Data Science</span>.
+                        <em> Proficient in building and deploying scalable applications.</em> </h2> 
+                </div>
+                <p class="bottom35">
+                    For the past  6 months, I have worked as an ML Engineer at Whizoid Studio. In this role, I gained valuable experience in studying data, developing machine learning systems and algorithms, and researching and implementing solutions deployed on the AWS cloud platform.
+                </p>
+                <p class="bottom35">
+                    <h3 class="defaultcolor">Achivements</h3>
+                    <ul class="list">
+                        <li>Built RESTful web services with PostgreSQL, enhancing scalability by 40%-50%.</li>
+                        <li>Developed robust applications using core Java, Spring Boot, Hibernate, and JDBC.</li>
+                        <li>Designed and implemented REST APIs following MVC architecture.</li>
+                        <li>Created scalable applications with Flask, FastAPI, and Django.</li>
+                        <li>Used Git/GitHub for version control and collaboration.</li>
+                        <li>Deployed and managed machine learning models on AWS.</li>
+                    </ul>
+                </p>
+                <a href="./CV/Dipak_Dhage.pdf" target="#" class="button btnsecondary gradient-btn  mb-sm-0 mb-4" >Download CV &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+                    <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"/>
+                  </svg></a>
+            </div>
+            <div class="col-lg-4 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
+                <div class="image prof-img"><img alt="SEO" src="images/1735809554147.jpg"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Some Feature ends-->
+<!-- WOrk Process-->
+<section id="skill" class="padding bgdark bg-counters parallax" style="background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(images/bg6.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 37.5539px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+                <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                    <span>Know more about our </span>
+                    <h2 class="font-normal">Domains of Expertise </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="process-wrapp">
+                <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+                    <span class="pro-step bottom20">01</span>
+                    <h4 class="fontbold bottom25 defaultcolor">Programming Lagnuages</h4>
+                    <p class="mt-n2 mt-sm-0">Proficient in Java and Python ,SQL</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
+                    <span class="pro-step bottom20">02</span>
+                    <h4 class="fontbold bottom25 defaultcolor">Framework and Library</h4>
+                    <p class="mt-n2 mt-sm-0">Spring, Spring Boot,JDBC, Hibernate, JPA, Rest API, Servlet, Flask,FastAPI, Django </p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="500ms">
+                    <span class="pro-step bottom20">03</span>
+                    <h4 class="fontbold bottom25 defaultcolor">Data Science</h4>
+                    <p class="mt-n2 mt-sm-0">Mathematics, Statistics,Machine Learning, Machine Learning, Basics of Deep Learning, Basics of NLP</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
+                    <span class="pro-step bottom20">04</span>
+                    <h4 class="fontbold bottom25 defaultcolor">Database</h4>
+                    <p class="mt-n2 mt-sm-0">MySql, SQL Server, Postgress SQL</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
+                    <span class="pro-step bottom20">05</span>
+                    <h4 class="fontbold bottom25 defaultcolor">Tool's and CLoud Platforms </h4>
+                    <p class="mt-n2 mt-sm-0">Excel, Git and Github, AWS</p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
+                    <span class="pro-step bottom20">06</span>
+                    <h4 class="fontbold bottom25 defaultcolor">Development Practices </h4>
+                    <p class="mt-n2 mt-sm-0">DSA, Collection, MVC Architecture </p>
+                </li>
+                <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
+                    <span class="pro-step bottom20">07</span>
+                    <h4 class="fontbold bottom25 defaultcolor">IDE and Code Editors</h4>
+                    <p class="mt-n2 mt-sm-0">Jupiter Notebook, Pycharm, Intelij IDE, Eclipse, Anaconda Navigator </p>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <section id="our-partners" class="padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div id="partners-slider" class="owl-carousel">
+                        <div class="item">
+                            <div class="logo-item"> <img alt="" src="images/Tech_logos/java-original.svg"></div>
+                        </div>
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/python-original.svg" ></div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/mysql-original-wordmark.svg"></div>
+                        </div>
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/sqlite-icon.svg"></div>
+                        </div> 
+    
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/postgresql-original-wordmark.svg"></div>
+                        </div>  
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/microsoft-sql-server-logo.svg"></div>
+                        </div>   
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/hibernate-1.svg" ></div>
+                        </div>
+    
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/spring.png" ></div>
+                        </div>
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/Ml.jpg" ></div>
+                        </div> 
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/tensorflow-icon.svg"></div>
+                        </div>   
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/seaborn.svg"></div>
+                        </div> 
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/Deep_learning.jpg" ></div>
+                        </div>  
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/opencv-icon.svg"></div>
+                        </div> 
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/Nlp.jpg"></div>
+                        </div>  
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/flask.svg"></div>
+                        </div>   
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/django.svg"></div>
+                        </div>
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/fast_api.jpg"></div>
+                        </div>   
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/getpostman-icon.svg"></div>
+                        </div>    
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/git-scm-icon.svg"></div>
+
+                        </div>  
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/github-sign.png"></div>
+                        </div>  
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/amazonwebservices-original-wordmark.svg"></div>
+                        </div> 
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/google_cloud-icon.svg"></div>
+                        </div>    
+                        <div class="item">
+                            <div class="logo-item"><img alt="" src="images/Tech_logos/heroku-icon.svg"></div>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!--WOrk Process ends-->
+<!-- Services us -->
+<section id="project" class="padding bglight">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="heading-title heading_space wow fadeInUp" data-wow-delay="300ms">
+                    <h2 class="darkcolor font-normal text-center text-md-start">Projects </h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12"></div>
+        </div>
+        <div id="services-measonry" class="cbp"> </div>
+        <div class="row  row-cols-3">
+            <div class="col">
+                <div class="card" >
+                    <img src="./images/Pro_1.png" class="card-img-top" alt="...">
+                    <div class="card-body height">
+                    <h5 class="card-title">RAINFALL PREDICTION FOR AUSTRALIA</h5>
+                    <p class="card-text">The project successfully demonstrated the ability to predict rainfall with high accuracy, providing actionable insights for weather forecasting and planning. It also enhanced my understanding of machine learning workflows, feature engineering, and model deployment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <img src="./images/Pro_2.png" class="card-img-top" alt="...">
+                    <div class="card-body height">
+                    <h5 class="card-title">WALMART SALES DATA ANALYSIS USING SQL SERVER</h5>
+                    <p class="card-text">The project provided actionable insights that could optimize inventory management, enhance marketing strategies, and improve overall sales performance. It also showcased my proficiency in SQL for data analysis and the ability to derive business value from data.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <img src="./images/Pro_3.png" class="card-img-top" alt="...">
+                    <div class="card-body height">
+                    <h5 class="card-title">DAIRY MANAGEMENT SYSTEM </h5>
+                    <p class="card-text">The Dairy Management System is a robust application crafted to optimize and automate dairy business operations. Built with Spring Boot, MVC architecture, Java, JSP, and modern front-end technologies, it addresses key challenges such as inventory management, transactions, and accounting. The system ensures seamless operations, providing a scalable and user-friendly solution tailored for dairy businesses.</p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Counter -->
+<section id="bg-counters" class="padding bg-counters parallax" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/bg2.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center 37.5539px;">
+    <div class="container">
+       <div class="row align-items-center text-center">
+          <div class="col-lg-4 col-md-4 col-sm-4 bottom10">
+             <div class="counters whitecolor  top10 bottom10">
+                <span class="count_nums font-light" data-to="100" data-speed="1200">100</span> <span style="font-size:30px;">+ </span>
+             </div>
+             <h3 class="font-light whitecolor top20"> LeetCode Problem </h3>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+             <p class="whitecolor top20 bottom20 font-light title">Problem-solving is the art of turning challenges into opportunities and bringing your dreams closer to reality. Stay curious, for curiosity fuels innovation and unlocks hidden possibilities</p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 bottom10">
+             <div class="counters whitecolor top10 bottom10">
+                <span class="count_nums font-light" data-to="4" data-speed="1600">4</span> <span style="font-size:30px;"> +</span>
+             </div>
+             <h3 class="font-light whitecolor top20">Project's </h3>
+          </div>
+       </div>
+    </div>
+ </section>
+<!-- Mobile Apps -->
+<section id="exp" class="padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-7 col-sm-12">
+                <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <h2 class="darkcolor font-normal text-center text-md-start">Experience</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row  align-items-center" id="app-feature">
+            <div class="col-lg-12 col-md-4 col-sm-12">
+                <div class="text-center text-md-start">
+                    <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">
+                        <!-- <div class="icon"><i class="fas fa-camera"></i></div> -->
+                        <div class="text">
+                            <h2>
+                                <span class="d-inline-block">Whizoid Studio LLP. <span style="font-size: 26px;">Indore, India </span>   </span>
+                            </h2>
+                            <h3> Software Engineer Intern <span style="font-size: 15px;">July 2024 To Nov 2024</span> </h3>
+                            <p>
+                                <ul class="exp-points">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                                      </svg> 
+                                     <p> Developed and implemented algorithms in Java and Python focusing on optimization and performance enhancements.</p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                                      </svg>
+                                     <p>  Debugged and resolved critical issues in existing software systems, improving system stability by 20%. </p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                                      </svg>
+                                     <p>  Increased data quality by 25% through efficient data preprocessing and implementing data validation techniques. </p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                                      </svg>
+                                     <p>  Designed and created automated scripts for data analysis and visualization using Python. </p></li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                                      </svg>
+                                      <p>  Collaborated with a team to refactor codebases for better scalability and maintainability, reducing system response time by 10%.</</li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                                      </svg>
+                                     <p>  Applied advanced techniques such as data labeling and text processing to improve the system's data pipeline. </p></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           
+           
+        </div>
+    </div>
+</section>
+<section id="edu" class="padding">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-7 col-sm-12">
+                <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <h2 class="darkcolor font-normal text-center text-md-start">Education</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row  align-items-center" id="app-feature">
+            <div class="col-lg-12 col-md-4 col-sm-12">
+                <div class="text-center text-md-start">
+                    <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">
+                        <!-- <div class="icon"><i class="fas fa-camera"></i></div> -->
+                        <div class="text">
+                            <h2>
+                                <span class="d-inline-block">Master's Of Computer Science <span style="font-size: 26px;">Pune, India </span>   </span>
+                            </h2>
+                            <h3> Savitribai Phule Pune University <span style="font-size: 15px;">July 2022 To March 2024</span> </h3>
+                            <p>
+                                <ul class="exp-points">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-star-fill" viewBox="0 0 16 16" style=" width: 35px;margin-top: 6px;">
+                                            <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5M8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.18.18 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.18.18 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.18.18 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.18.18 0 0 1-.134-.098z"/>
+                                          </svg>
+                                     <p> <b style="font-size: 15px;">  Courseworks : </b> Advanced Operating Systems, Algorithms and Data Structures, Advanced Database Management Systems (ADBMS), Software Engineering, SDLC models, Cloud Computing, Internet of Things (IoT), AI/ML programming (e.g., using Python libraries), Natural Language Processing, Distributed systems programming</p>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trophy-fill" viewBox="0 0 16 16" style=" width: 45px;margin-top: 6px;">
+                                            <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/>
+                                          </svg>
+                                     <p> <b style="font-size: 15px;">  Project : </b>Developed an advanced AI-powered Chatbot system incorporating neural networks and machine learning models to deliver intelligent, human-like interactions. The system is designed to analyze user queries, understand context, and provide accurate, real-time solutions. It features adaptive learning capabilities, enabling continuous improvement based on user interactions, and is optimized for multi-domain problem-solving. This innovation enhances customer experience, streamlines support operations, and reduces response time significantly.</p>
+                                    </li>
+                                    
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-4 col-sm-12">
+                <div class="text-center text-md-start">
+                    <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInLeft;">
+                        <!-- <div class="icon"><i class="fas fa-camera"></i></div> -->
+                        <div class="text">
+                            <h2>
+                                <span class="d-inline-block">Bachelor of Computer Science <span style="font-size: 26px;">Pune, India </span>   </span>
+                            </h2>
+                            <h3> Savitribai Phule Pune University <span style="font-size: 15px;">July 2019 To Sep 2022</span> </h3>
+                            <p>
+                                <ul class="exp-points">
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark-star-fill" viewBox="0 0 16 16" style=" width: 35px;margin-top: 6px;">
+                                            <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5M8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.18.18 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.18.18 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.18.18 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.18.18 0 0 1-.134-.098z"/>
+                                          </svg>
+                                     <p> <b style="font-size: 15px;">  Courseworks : </b> Problem Solving Using Computers, Database Management Systems (DBMS), Computer Fundamentals and Applications, C Programming, Data Structures and Algorithms, Object-Oriented Programming (OOP) with Java, Web Development (HTML, CSS, JavaScript), Java Programming, Advanced Database Management Systems ,Artificial Intelligence, Machine Learning Basics
+                                     </p>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trophy-fill" viewBox="0 0 16 16" style=" width: 45px;margin-top: 6px;">
+                                            <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935"/>
+                                          </svg>
+                                     <p> <b style="font-size: 15px;">  Project : </b> Developed a Student-Teacher Portal using Python and Django, designed to enhance communication and collaboration between students and teachers. The platform includes secure user authentication, personalized dashboards, assignment submission with feedback, real-time notifications, and performance tracking features. Teachers can upload assignments and grade submissions, while students can access course materials and monitor their progress. The system improves academic interaction, streamlines workflows, and provides a scalable solution for educational institutions.</p>
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16" style=" width: 35px;margin-top: 6px;">
+                                            <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+                                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                                          </svg>
+                                     <p> <b style="font-size: 15px;">  Achivements : </b> Organized and led successful technical workshops on web development and software design for students, receiving positive feedback for engaging content. Collaborated with a team to present key concepts, industry best practices, and hands-on exercises, aiming to inspire students, foster a passion for technology, and equip them with practical skills for pursuing software development careers.</p>
+                                    </li>
+                                    
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+           
+           
+        </div>
+    </div>
+</section>
+<!-- Contact US -->
+<section id="contact" class="bglight position-relative padding noshadow">
+    <div class="container whitebox">
+        <div class="widget py-5">
+            <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="heading-title heading_space wow fadeInUp" data-wow-delay="300ms">
+               <!--      <span class="defaultcolor text-center text-md-start">The Team </span> -->
+                    <h2 class="darkcolor font-normal text-center text-md-start">Contact Us</h2>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+            <!--     <p class="heading_space mt-n3 mt-sm-0 text-center text-md-start">The driving force behind all the magic. </p> -->
+            </div>
+                
+            <div class="col-md-12 col-sm-6">
+                <div style="width: 50%;margin:auto">
+                    <div class="mb-3">
+                      <label  class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Message</label>
+                        <textarea type="text" class="form-control" id="msg"></textarea>
+                      </div>
+                    <button type="submit" class="btn send-btn" onclick="sendEmail()">Send</button>
+                  </div>
+
+                  
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Contact US ends -->
+<!--Site Footer Here-->
+<footer id="site-footer" class=" bgdark padding_top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    
+                    <div class="d-table w-100 address-item whitecolor bottom25">
+                        <span class="d-table-cell align-middle"><i class="fas fa-mobile-alt"></i></span>
+                        <p class="d-table-cell align-middle bottom0">
+                            <a href="tel:+919049105730">+91 9049105730 </a><a class="d-block" href="mailto:dipakdhage0007@gmail.com">dipakdhage0007@gmail.com</a>
+                        </p>
+                    </div>
+                    <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
+
+                    	   <li><a target="_blank" rel="noopener noreferrer" href="www.linkedin.com/in/dipakdhage2207"><i class="fab fa-linkedin-in"></i> </a> </li>                         
+                           <li><a target="_blank" rel="noopener noreferrer" href="https://wa.me/9049105730"><i class="fab fa-whatsapp"></i> </a> </li>
+                           <li><a target="_blank" rel="noopener noreferrer" href="mailto:dipakdhage0007@gmail.com"><i class="far fa-envelope"></i> </a> </li>
+
+	                	
+
+                  <!--       <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li> -->
+                 
+            <!--             <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li> -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <h3 class="whitecolor bottom25">Address</h3>
+                    <ul class="latest_news whitecolor">
+                        <li> 
+                            Pune, Maharashtra State, India
+                            Pin : 411-014
+                        </li>
+                        <!-- <li> <a href="#.">Phasellus dapibus dictum augue... </a> <span class="date defaultcolor">15 March 2019</span> </li>
+                        <li> <a href="#.">Mauris blandit vitae. Praesent non... </a> <span class="date defaultcolor">15 March 2019</span> </li> -->
+                    </ul>
+                </div>
+            </div>
+        <!--     <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_panel padding_bottom_half bottom20">
+                    <h3 class="whitecolor bottom25">Business hours</h3>
+                    <p class="whitecolor bottom25">Our support available to help you</p>
+                    <ul class="hours_links whitecolor">
+                        <li><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>
+                        <li><span>Friday:</span> <span>09:00-21:00</span></li>
+                        <li><span>Sunday:</span> <span>09:00-20:00</span></li>
+                         <li><span>Calendar Events:</span> <span>24-Hour Shift</span></li>  
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<!--Bootstrap Core-->
+<script src="js/propper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--to view items on reach-->
+<script src="js/jquery.appear.js"></script>
+<!--Owl Slider-->
+<script src="js/owl.carousel.min.js"></script>
+<!--number counters-->
+<script src="js/jquery-countTo.js"></script>
+<!--Parallax Background-->
+<script src="js/parallaxie.js"></script>
+<!--Cubefolio Gallery-->
+<script src="js/jquery.cubeportfolio.min.js"></script>
+<!--Fancybox js-->
+<script src="js/jquery.fancybox.min.js"></script>
+<!--tooltip js-->
+<script src="js/tooltipster.min.js"></script>
+<!--wow js-->
+<script src="js/wow.js"></script>
+<!--particles js-->
+<script src="js/particles.min.js"></script>
+<!--morph text js-->
+<script src="js/morphext.min.js"></script>
+<!--Revolution SLider-->
+<script src="js/jquery.themepunch.tools.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS -->
+<script src="js/revolution.extension.actions.min.js"></script>
+<script src="js/revolution.extension.carousel.min.js"></script>
+<script src="js/revolution.extension.kenburn.min.js"></script>
+<script src="js/revolution.extension.layeranimation.min.js"></script>
+<script src="js/revolution.extension.migration.min.js"></script>
+<script src="js/revolution.extension.navigation.min.js"></script>
+<script src="js/revolution.extension.parallax.min.js"></script>
+<script src="js/revolution.extension.slideanims.min.js"></script>
+<script src="js/revolution.extension.video.min.js"></script>
+<!--custom functions and script-->
+<script src="js/functions.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+
+	$('img').bind('contextmenu', function(e) {
+    return false;
+}); 
+
+
+
+	$('#our-process').waypoint(function() {
+
+ 
+    
+
+        $('#home_link_main').removeClass('active');
+        $('#contact_link_main').removeClass('active');
+    $('#about_link_main').addClass('active');
+
+
+
+    // $('.onscrollActivate').waypoint(function() {
+  });
+
+
+	$('#our-services').waypoint(function() {
+
+ 
+    
+
+        $('#home_link_main').removeClass('active');
+        $('#contact_link_main').removeClass('active');
+    $('#about_link_main').addClass('active');
+
+
+
+    // $('.onscrollActivate').waypoint(function() {
+  });
+
+
+
+		$('#our-partners').waypoint(function() {
+
+
+        $('#home_link_main').removeClass('active');
+        $('#contact_link_main').addClass('active');
+    $('#about_link_main').removeClass('active');
+
+    // $('.onscrollActivate').waypoint(function() {
+  });
+
+			$('#stayconnect').waypoint(function() {
+
+
+        $('#home_link_main').removeClass('active');
+        $('#contact_link_main').addClass('active');
+    $('#about_link_main').removeClass('active');
+
+    // $('.onscrollActivate').waypoint(function() {
+  });
+
+
+				$('#our-feature').waypoint(function() {
+
+
+        $('#home_link_main').addClass('active');
+        $('#contact_link_main').removeClass('active');
+    $('#about_link_main').removeClass('active');
+
+    // $('.onscrollActivate').waypoint(function() {
+  });
+
+
+});
+	</script>
+
+
+</body></html>
