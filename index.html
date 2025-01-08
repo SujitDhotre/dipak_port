@@ -105,24 +105,24 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item ">
-                        <a class="nav-link active" id="home_link_main" href="#home"> Home </a>
+                        <a class="nav-link active" id="home_link_home" href="#home"> Home </a>
                         
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact_link_main" href="#about">About Me</a>
+                        <a class="nav-link" id="contact_link_about" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about_link_main" href="#skill">Skill's</a>
+                        <a class="nav-link" id="about_link_skill" href="#skill">Skill's</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about_link_main" href="#project">Project's</a>
+                        <a class="nav-link" id="about_link_project" href="#project">Project's</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="about_link_main" href="#exp">Experiences</a>
+                        <a class="nav-link" id="about_link_exp" href="#exp">Experiences</a>
                     </li>
                    
                     <li class="nav-item">
-                        <a class="nav-link" id="contact_link_main" href="#contact">Contact</a>
+                        <a class="nav-link" id="contact_link_contact" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -145,10 +145,6 @@
                             <!-- <i class="fas fa-chevron-down"></i> -->
                         </a>
                        
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active" id="home_link_main" href="#home"> Home </a>
-                        
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="contact_link_main" href="#about">About Me</a>
@@ -735,79 +731,75 @@
 <script src="js/waypoints.min.js"></script>
 <script src="js/jquery-migrate-3.0.0.min.js"></script>
 
-<script>
-$(document).ready(function(){
+<script>$(document).ready(function(){
 
-	$('img').bind('contextmenu', function(e) {
-    return false;
-}); 
+    // Disable right-click context menu on images
+    $('img').bind('contextmenu', function(e) {
+        return false;
+    });
 
+    // Waypoint for the Home section
+    $('#home').waypoint(function() {
+        $('#home_link_home').addClass('active');
+        $('#about_link_about').removeClass('active');
+        $('#about_link_skill').removeClass('active');
+        $('#about_link_project').removeClass('active');
+        $('#about_link_exp').removeClass('active');
+        $('#contact_link_contact').removeClass('active');
+    }, { offset: '50%' }); // Adjust offset as needed
 
+    // Waypoint for the About section
+    $('#about').waypoint(function() {
+        $('#home_link_home').removeClass('active');
+        $('#about_link_about').addClass('active');
+        $('#about_link_skill').removeClass('active');
+        $('#about_link_project').removeClass('active');
+        $('#about_link_exp').removeClass('active');
+        $('#contact_link_contact').removeClass('active');
+    }, { offset: '50%' }); // Adjust offset as needed
 
-	$('#our-process').waypoint(function() {
+    // Waypoint for the Skills section
+    $('#skill').waypoint(function() {
+        $('#home_link_home').removeClass('active');
+        $('#about_link_about').removeClass('active');
+        $('#about_link_skill').addClass('active');
+        $('#about_link_project').removeClass('active');
+        $('#about_link_exp').removeClass('active');
+        $('#contact_link_contact').removeClass('active');
+    }, { offset: '50%' }); // Adjust offset as needed
 
- 
-    
+    // Waypoint for the Projects section
+    $('#project').waypoint(function() {
+        $('#home_link_home').removeClass('active');
+        $('#about_link_about').removeClass('active');
+        $('#about_link_skill').removeClass('active');
+        $('#about_link_project').addClass('active');
+        $('#about_link_exp').removeClass('active');
+        $('#contact_link_contact').removeClass('active');
+    }, { offset: '50%' }); // Adjust offset as needed
 
-        $('#home_link_main').removeClass('active');
-        $('#contact_link_main').removeClass('active');
-    $('#about_link_main').addClass('active');
+    // Waypoint for the Experiences section
+    $('#exp').waypoint(function() {
+        $('#home_link_home').removeClass('active');
+        $('#about_link_about').removeClass('active');
+        $('#about_link_skill').removeClass('active');
+        $('#about_link_project').removeClass('active');
+        $('#about_link_exp').addClass('active');
+        $('#contact_link_contact').removeClass('active');
+    }, { offset: '50%' }); // Adjust offset as needed
 
-
-
-    // $('.onscrollActivate').waypoint(function() {
-  });
-
-
-	$('#our-services').waypoint(function() {
-
- 
-    
-
-        $('#home_link_main').removeClass('active');
-        $('#contact_link_main').removeClass('active');
-    $('#about_link_main').addClass('active');
-
-
-
-    // $('.onscrollActivate').waypoint(function() {
-  });
-
-
-
-		$('#our-partners').waypoint(function() {
-
-
-        $('#home_link_main').removeClass('active');
-        $('#contact_link_main').addClass('active');
-    $('#about_link_main').removeClass('active');
-
-    // $('.onscrollActivate').waypoint(function() {
-  });
-
-			$('#stayconnect').waypoint(function() {
-
-
-        $('#home_link_main').removeClass('active');
-        $('#contact_link_main').addClass('active');
-    $('#about_link_main').removeClass('active');
-
-    // $('.onscrollActivate').waypoint(function() {
-  });
-
-
-				$('#our-feature').waypoint(function() {
-
-
-        $('#home_link_main').addClass('active');
-        $('#contact_link_main').removeClass('active');
-    $('#about_link_main').removeClass('active');
-
-    // $('.onscrollActivate').waypoint(function() {
-  });
-
+    // Waypoint for the Contact section
+    $('#contact').waypoint(function() {
+        $('#home_link_home').removeClass('active');
+        $('#about_link_about').removeClass('active');
+        $('#about_link_skill').removeClass('active');
+        $('#about_link_project').removeClass('active');
+        $('#about_link_exp').removeClass('active');
+        $('#contact_link_contact').addClass('active');
+    }, { offset: '50%' }); // Adjust offset as needed
 
 });
+
 	</script>
 
 
